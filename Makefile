@@ -13,7 +13,7 @@ depend: .depend
 -include .depend
 
 %.pdf: %.pandoc beamer.my beamercolorthemekrok.sty
-	pandoc --slide-level $(SLIDELEVEL) -t beamer $< -H beamer.my --latex-engine=pdflatex -o $@
+	pandoc --slide-level $(SLIDELEVEL) -t beamer $< -H beamer.my -V theme:boxes -V fonttheme:structurebold  --latex-engine=pdflatex -o $@
 
 %.epub: %.pandoc beamer.my beamercolorthemekrok.sty
 	pandoc --slide-level $(SLIDELEVEL) -t epub $< --template beamer.my -V theme:Warsaw -V fonttheme:structurebold -V colortheme:krok -o $@
@@ -27,7 +27,7 @@ depend: .depend
 %-blog.txt: %.pandoc
 	php etxt.php $< > $@
 clean:
-	rm -f $(TARGETS) *.png .depend
+	rm -f $(TARGETS) *.png *.jpg .depend
 
 push:
 	git push origin master
