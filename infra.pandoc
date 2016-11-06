@@ -9,7 +9,6 @@
 * Мрежа
 * Wireless
 * Monitoring
-* Телефони
 * Ток
 * Видео
 
@@ -19,8 +18,6 @@
 
 # Мрежа
 
-##
-### Мрежа
 
 ##
 
@@ -34,8 +31,6 @@
 * Да може да носи всичкия потребителски и служебен трафик
 	* много видео трафик
 
-##
-### Хардуерна част
 
 ## Техника
 
@@ -104,14 +99,22 @@
 
 ![Сървърно след](srva.jpg)
 
-## NOC мазе
+##
 
-* чакам хубави снимки
-
-
+![терариум - NOC](noc1.jpg)
 
 ##
-### Софтуерна част
+
+![... или кланица](noc2.jpg)
+
+##
+
+![а такава мрежа не сме правили](not-our.jpg)
+
+##
+
+![но свързахме дори това към нас](linked.jpg)
+
 
 ## routing и т.н.
 
@@ -156,18 +159,44 @@
 
 # wireless
 
-##
-### Wireless
-
 # Monitoring
 
-# Телефони
+
+## From
+![initial](initial.png)
+
+## Trough
+![step1](red.png)
+
+## Finaly
+![finally](green.png)
+
+## Statistics
+ * 40 - active Hosts
+ * 300+ - Active Services
+ * 6 - People in NOC
+ * 1 kilogram - waffles
+ * 10 - devices dedicated for monitoring
+ * 30 - days of work
+
+## What we do
+![monitor](monitor-all-the-things.jpg)
+
+## And specificaly
+ * Switches
+ * Routers
+ * Wifi
+ * Stats
+
+## Some stats
+ * Maximum traffic - 300
+ * Number of active clients - 300
+ * Unique clients - 872
+ * simultaneous sessions - 13.28K
 
 # Ток
 
 # Видео
-
-# КРАЙ
 
 ##
 ### Благодарим за вниманието!
