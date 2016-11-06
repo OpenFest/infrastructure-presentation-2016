@@ -13,7 +13,7 @@ depend: .depend
 -include .depend
 
 %.pdf: %.pandoc beamer.my beamercolorthemekrok.sty
-	pandoc --slide-level $(SLIDELEVEL) -t beamer $< -H beamer.my -V theme:boxes -V fonttheme:structurebold  --latex-engine=pdflatex -o $@
+	pandoc --slide-level $(SLIDELEVEL) -t beamer $< -H beamer.my -V theme:boxes -V fonttheme:structurebold -V classoption:aspectratio=169 --latex-engine=pdflatex -o $@
 
 %.epub: %.pandoc beamer.my beamercolorthemekrok.sty
 	pandoc --slide-level $(SLIDELEVEL) -t epub $< --template beamer.my -V theme:Warsaw -V fonttheme:structurebold -V colortheme:krok -o $@
